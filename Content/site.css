@@ -1,0 +1,89 @@
+#main-content{
+    padding: 45px;
+    background: white;
+}
+
+#options-speed-dial{
+    position: fixed;
+    right: 25px;
+    top: 25px;
+}
+
+.active { 
+    color: red; 
+    font-weight: bold; 
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,15%,0);transform:translate3d(0,15%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,15%,0);transform:translate3d(0,15%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+}
+
+.slide-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slide-animate{
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+    opacity: 0;
+}
+
+.slide-animate.slide-animate-show {
+    opacity:1;
+}
+
+.slide-image{
+    cursor: pointer;
+}
+
+img:focus{
+    outline: none;
+}
+
+.image-container{
+    padding: 14px;
+}
+
+.gallery-image{
+    width: 100%;
+    min-height: 300px;
+}
+
+.fabSpeedDialdemoBasicUsage .text-capitalize {
+    text-transform: capitalize; }
+  
+  .fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+    background-color: #000 !important; }
+  
+  .fabSpeedDialdemoBasicUsage p.note {
+    font-size: 1.2rem; }
+  
+  .fabSpeedDialdemoBasicUsage .lock-size {
+    min-width: 300px;
+    min-height: 300px;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+
+    @media (max-width:1200px){
+        
+        .gallery-image{
+            min-height: 220px;
+        }
+
+    }
