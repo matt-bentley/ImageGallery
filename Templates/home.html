@@ -7,7 +7,7 @@
                 <div class="col-11">
                     <div class="container" style="padding-left: 40px;padding-right: 40px;">
                         <div class="row" style="width: 100%;text-align: center;position: relative;">
-                            <div>
+                            <div style="padding-top: 50px;">
                                 <div ng-repeat="image in images" class="slide-container">
                                     <div ng-show="$index == currentSlide" class="slide-animate" ng-class="{'slide-animate-show' : ($index == currentSlide)}">
                                         <img ng-click="forceNextSlide()" class="slide-image" ng-src="{{'Images/' + image}}">
